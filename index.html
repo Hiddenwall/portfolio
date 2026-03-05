@@ -1,172 +1,225 @@
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Michael Campanile's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Michael Campanile | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;400&display=swap" rel="stylesheet" />
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        :root {
+            --bg: #0e0e10;
+            --surface: #18181c;
+            --border: #2a2a32;
+            --accent: #c8a97e;
+            --text: #e8e4de;
+            --muted: #7a7570;
+        }
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
-						<h1>Michael Campanile</h1>
-						<p>Aspiring Game Developer<br />
-						<!-- built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p> -->
-					</header>
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            min-height: 100vh;
+        }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Games</a></li>
-							<li><a href="#first">About Me</a></li>
-							<li><a href="#second">Resume</a></li>
-						</ul>
-					</nav>
+        /* ── HEADER ── */
+        header {
+            text-align: center;
+            padding: 80px 20px 60px;
+            border-bottom: 1px solid var(--border);
+        }
 
-				<!-- Main -->
-					<div id="main">
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.4rem, 6vw, 4rem);
+            letter-spacing: 0.04em;
+            color: var(--text);
+        }
 
-						<!-- Games Section -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>2025</h2>
-										</header>
-										<p>Congratulations! You are selected to work in the Media Regulation Branch 
-										to safeguard NewMerican values. Dive into this dystopian puzzle game; 
-										censor newspapers, discover secrets, and ban those who oppose NewMerica.</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/2025Game.jpg" alt="" /></span>
-								</div>
-							</section>
+        header p {
+            margin-top: 10px;
+            font-size: 1rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--accent);
+        }
 
-						<!-- About Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Magna veroeros</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+        /* ── NAV ── */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 22px 20px;
+            border-bottom: 1px solid var(--border);
+        }
 
-						<!-- Resume Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Ipsum consequat</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Etiam feugiat</h2>
-							<dl class="alt">
-								<!-- <dt>Address</dt> -->
-								<!-- <dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd> -->
-								<!-- <dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd> -->
-							</dl>
-							<ul class="icons">
-								<li><a href="https://github.com/Hiddenwall" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/michael-campanile-665a4533a/" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<!-- <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li> -->
-								<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
-								<!-- <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li> -->
-							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+        nav a:hover { color: var(--accent); }
 
-			</div>
+        /* ── MAIN ── */
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 60px 20px 100px;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        /* ── SECTION TITLE ── */
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            color: var(--text);
+            margin-bottom: 30px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+        }
 
-	</body>
+        /* ── GAME CARD ── */
+        .game-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 36px;
+            margin-bottom: 40px;
+        }
 
+        @media (max-width: 620px) {
+            .game-card { grid-template-columns: 1fr; }
+        }
+
+        .game-card img {
+            width: 100%;
+            display: block;
+        }
+
+        .game-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+
+        .game-card p {
+            font-size: 0.95rem;
+            line-height: 1.75;
+            color: var(--muted);
+            margin-bottom: 24px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 24px;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.78rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--accent);
+            color: var(--bg);
+        }
+
+        /* ── SECTION SPACING ── */
+        section { margin-bottom: 80px; }
+
+        /* ── ABOUT ── */
+        .about-text {
+            font-size: 1rem;
+            line-height: 1.9;
+            color: var(--muted);
+            max-width: 680px;
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid var(--border);
+            font-size: 0.78rem;
+            letter-spacing: 0.12em;
+            color: var(--muted);
+        }
+
+        footer a { color: var(--accent); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Michael Campanile</h1>
+        <p>Aspiring Game Designer</p>
+    </header>
+
+    <nav>
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+    </nav>
+
+    <main>
+
+        <!-- Games -->
+        <section id="games">
+            <h2 class="section-title">Games</h2>
+
+            <div class="game-card">
+                <img src="images/2025Game.jpg" alt="2025 Game" />
+                <div>
+                    <h3>2025</h3>
+                    <p>
+                        Congratulations! You are selected to work in the Media Regulation Branch
+                        to safeguard NewMerican values. Dive into this dystopian puzzle game;
+                        censor newspapers, discover secrets, and ban those who oppose NewMerica.
+                    </p>
+                    <a href="generic.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">
+                Write something about yourself here — your background, interests,
+                and what drives you as a game designer.
+            </p>
+        </section>
+
+        <!-- Resume -->
+        <section id="resume">
+            <h2 class="section-title">Resume</h2>
+            <p class="about-text">
+                Add your resume content here, or link to a PDF.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/Hiddenwall">GitHub</a> &nbsp;&bull;&nbsp;
+            <a href="https://www.linkedin.com/in/michael-campanile-665a4533a/">LinkedIn</a>
+        </p>
+        <p style="margin-top:10px;">&copy; 2025 Michael Campanile</p>
+    </footer>
+
+</body>
 </html>
-
-
-
-
